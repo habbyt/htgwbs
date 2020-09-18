@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Habtamnesh Goite
+    </title>
+      <link rel="stylesheet" href="index.css">
+      <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+      
+  </head>
+  <body>
+
+      <div class="top_nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="Publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+
+  </div>
+
+    <div id="side_content">
+<div id="abs">
+  <h1>Map projects </h1>
+
+  <p>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.83212278806605%2C60.17366946042504%2C24.99279783689417%2C60.230568362734985&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=13/60.2021/24.9125">View Larger Map</a></small>
+  </p>
+</h4>
+</div>
+
+
+          <div id="external">
+
+          <p><a href="https://twitter.com/yermoji?lang=en"><img id="pics" src='twitter.png'/></a>
+          <a href="https://www.linkedin.com/in/habtamnesh-t-goite-53808b88">  <img id="pics" src='linkedin.png'/></a>
+          <a href="https://github.com/habbyt">  <img id="pics" src='git.jpg'/></a>
+          <img id="pics" src='gmail.png'/>
+        </p>
+          </div>
+    </div>
+    <div id="main_content">
+  <h1>Map projects </h1>
+    <p style="float:left;">
+        <iframe width="550" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=38.65141295129434%2C8.96478419555811%2C38.81208800012246%2C9.077865978273547&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=13/9.0213/38.7318">View Larger Map</a></small>
+      </p>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+              <script>
+                 // Creating map options
+                 var mapOptions = {
+                    center: [17.385044, 78.486671],
+                    zoom: 10
+                 }
+
+                 // Creating a map object
+                 var map = new L.map('map', mapOptions);
+
+                 // Creating a Layer object
+                 var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+                 // Adding layer to the map
+                 map.addLayer(layer);
+              </script>
+
+    </div>
+  </body>
+</html>
